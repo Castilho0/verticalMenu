@@ -1,0 +1,262 @@
+/* ========================== Configurações gerais */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+}
+
+/* ========================== Menu Open */
+
+.menu {
+    width: 340px;
+    height: 100vh;
+    background: #11101d;
+    /* position: relative; */
+}
+
+/* ========================== Menu Close */
+
+.menu-close {
+    width: 61px;
+    height: 100vh;
+    background: #11101d; 
+}
+
+.menu-close .footer-menu {
+    width: 272px;
+    position: relative;
+    background: #11101d;
+}
+
+.menu-close .body-menu ul.ul-body-menu > li:hover {
+    background-color: #212129;
+    border-radius: 6px 0 0 6px;
+}
+
+.menu-close .body-menu ul.ul-body-menu > li .sub-menu .title-li {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.menu-close .body-menu ul.ul-body-menu > li .sub-menu .option-li {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.menu-close .body-menu ul.ul-body-menu > li {
+    position: initial;
+}
+
+.menu-close .body-menu ul.ul-body-menu > li:hover .sub-menu {
+    position: absolute;
+    left: 61px;
+    background-color: #212129;
+    display: block;
+}
+
+.menu-close .sub-menu {
+    margin-top: -8px;
+    padding: 5px 0;
+    border-radius: 0 6px 6px 0;
+    width: 211px;
+}
+
+.menu-close .sub-menu li {
+    height: 35px;
+}
+
+.menu-close .sub-menu .option-li a {
+    opacity: .6;
+    transition: all .3s ease;
+}
+
+.menu-close .sub-menu a:hover {
+    opacity: 1;
+}
+
+/* ========================== Menu Header */
+
+.header-menu {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    padding: 0 8px;
+    align-items: center;
+    color: #fff;
+}
+
+.header-menu i {
+    font-size: 45px;
+    margin-right: 25px;
+}
+
+.header-menu span {
+    font-weight: 600;
+    font-size: min(18px, 2vw);
+}
+
+/* ========================== Menu Body */
+
+.body-menu {
+    width: 100%;
+    height: calc(100% - 160px);
+}
+
+.body-menu ul.ul-body-menu {
+    padding: 20px 8px 20px 8px;
+    height: 100%;
+    display: grid;
+    overflow: auto;
+}
+
+.body-menu ul.ul-body-menu::-webkit-scrollbar {
+    display: none;
+}
+
+.body-menu ul.ul-body-menu > li {
+    display: grid;
+    padding: 7.22px 0;
+    outline: 1px solid #11101d;
+    transition: all .3s ease;
+}
+
+.body-menu ul.ul-body-menu > li:hover {
+    background-color: #212129;
+}
+
+.body-menu ul.ul-body-menu > li a {
+    font-size: min(15px, 2vw);
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.body-menu ul.ul-body-menu > li a > i,
+.i-arrow-span i:first-child {
+    margin-right: 40px;
+    font-size: 30px;
+}
+
+.i-arrow-span {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.bx-chevron-down {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.show-menu {
+    border-top: none;
+    padding: 5px 5px 0;
+    display: grid;
+    font-size: min(15px, 2vw);
+}
+
+.show-menu li {
+    opacity: .6;
+    transition: all .3s ease;
+}
+
+.show-menu li:hover {
+    opacity: 1;
+    background-color: #11101d;
+}
+
+.li-background {
+    background-color: #212129;
+}
+
+.title-li {
+    display: none;
+}
+
+/* ========================== Menu Footer */
+
+.footer-menu {
+    width: 100%;
+    height: 90px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.footer-menu img {
+    width: 45px;
+    height: 45px;
+    border-radius: 16px;
+}
+
+.name-job {
+    display: inline;
+    padding: 0 1px;
+}
+
+.name,
+.job {
+    font-weight: 600;
+    color: #fff;
+}
+
+.name {
+    font-size: min(16.5px, 2vw);
+}
+
+.job {
+    font-size: min(11px, 1vw);
+}
+
+.footer-menu i {
+    font-size: 30px;
+    color: #fff;
+}
+
+/* ========================== Aside */
+
+aside {
+    width: 100%;
+    height: 100vh;
+    background: rgb(168, 168, 168);
+}
+
+.menu-icon {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon i {
+    cursor: pointer;
+    font-size: 45px;
+    margin-right: 15px;
+}
+
+.menu-icon span {
+    font-size: 35px;
+}
